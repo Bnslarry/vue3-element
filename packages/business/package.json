@@ -1,17 +1,32 @@
-
 {
-    "name": "@glow/business",
-    "version": "0.0.1",
-    "main": "dist/cjs/index.cjs",
-    "module": "dist/esm/index.mjs",
-    "types": "dist/esm/index.d.ts",
-    "dependencies": {
-      "@glow/components": "^0.0.1"
+  "name": "@glow/business",
+  "version": "0.0.1",
+  "main": "dist/cjs/index.cjs",
+  "module": "dist/esm/index.mjs",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.cjs",
+      "import": "./dist/esm/index.mjs",
+      "types": "./dist/esm/index.d.ts"
     },
-    "devDependencies": {
-      "vue": "^3.2.39"
+    "./esm/*": {
+      "import": "./dist/esm/*/index.mjs",
+      "types": "./dist/esm/*/index.d.ts"
     },
-    "peerDependencies": {
-      "vue": "^3.2.39"
-    }
+    "./cjs/*": {
+      "require": "./dist/cjs/*/index.cjs",
+      "types": "./dist/cjs/*/index.d.ts"
+    },
+    "./css/*": "./dist/css/*"
+  },
+  "dependencies": {
+    "@glow/components": "^0.0.1"
+  },
+  "devDependencies": {
+    "vue": "^3.2.39"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.39"
   }
+}
