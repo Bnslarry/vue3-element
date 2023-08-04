@@ -9,6 +9,7 @@ import Header from './header';
 import Footer from './footer';
 import Content from './content';
 import Sider from './sider';
+import { Form, FormInstance } from './form';
 
 export {
   Button,
@@ -21,5 +22,7 @@ export {
   Header,
   Footer,
   Content,
-  Sider
+  Sider,
+  Form,
+  FormInstance
 };
