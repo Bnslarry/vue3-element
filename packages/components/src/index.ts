@@ -9,7 +9,8 @@ import Header from './header';
 import Footer from './footer';
 import Content from './content';
 import Sider from './sider';
-import { Form, FormInstance } from './form';
+import { Form } from './form';
+import { FormInstance } from './form/common';
 
 export {
   Button,
@@ -23,6 +24,7 @@ export {
   Footer,
   Content,
   Sider,
-  Form,
-  FormInstance
+  Form
 };
+
+export type { FormInstance };

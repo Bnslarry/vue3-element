@@ -26,7 +26,8 @@
 
 <script setup lang="ts">
 import { ref, reactive } from 'vue';
-import { Form, FormInstance } from '../src';
+import { Form } from '../src';
+import { FormInstance } from '../src';
 
 const { FormItem } = Form;
 const formRef = ref<FormInstance>();
