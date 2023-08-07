@@ -12,6 +12,7 @@ import Sider from './sider';
 import { Form } from './form';
 import { FormInstance } from './form/common';
 import DynamicForm from './dynamic-form';
+import Image from './image';
 
 export {
   Button,
@@ -26,7 +27,8 @@ export {
   Content,
   Sider,
   Form,
-  DynamicForm
+  DynamicForm,
+  Image
 };
 
 export type { FormInstance };

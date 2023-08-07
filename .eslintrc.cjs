@@ -16,6 +16,7 @@ module.exports = {
     quotes: ['error', 'single'],
     // 禁用console
     //'no-console': 'error',
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    'vue/no-setup-props-destructure': 'off'
   }
 };
