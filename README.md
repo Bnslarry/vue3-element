@@ -9,6 +9,15 @@
 
 ```sh
 # node 版本使用 v16.14.0
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+nvm use v16.14.0
+
+# pnpm 版本使用 8.6.1
+
+sudo npm install -g pnpm@8.6.1
+
 # 使用 pnpm 来管理项目
 pnpm i
 ```
