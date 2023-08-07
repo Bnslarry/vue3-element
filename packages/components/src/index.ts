@@ -11,6 +11,7 @@ import Content from './content';
 import Sider from './sider';
 import { Form } from './form';
 import { FormInstance } from './form/common';
+import DynamicForm from './dynamic-form';
 
 export {
   Button,
@@ -24,7 +25,9 @@ export {
   Footer,
   Content,
   Sider,
-  Form
+  Form,
+  DynamicForm
 };
 
 export type { FormInstance };
+export type { DynamicFormField } from './dynamic-form';
