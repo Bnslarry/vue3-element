@@ -9,7 +9,9 @@
     "postinstall": "npm run build",
     "test": "vitest",
     "test:update": "vitest --update",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "dev:work-front": "vite-node ./scripts/dev-work-front.ts",
+    "build:work-front": "vite-node ./scripts/build-work-front.ts"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^23.0.2",
@@ -23,20 +25,31 @@
     "@vue/eslint-config-typescript": "^11.0.2",
     "@vue/test-utils": "^2.4.1",
     "@vue/tsconfig": "^0.1.3",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
     "eslint": "^8.26.0",
     "eslint-plugin-vue": "^9.6.0",
     "fast-glob": "^3.2.12",
     "jsdom": "^22.1.0",
     "less": "^4.1.3",
+    "less-loader": "^11.1.3",
+    "mini-css-extract-plugin": "^2.7.6",
     "prettier": "^2.7.1",
     "rollup": "^3.2.3",
     "rollup-plugin-esbuild": "^4.10.1",
+    "ts-loader": "^9.4.4",
     "ts-morph": "^16.0.0",
     "typescript": "^4.8.4",
     "unplugin-vue-macros": "^0.14.0",
     "vite": "^3.1.8",
     "vite-node": "^0.24.3",
     "vitest": "^0.34.1",
-    "vue": "^3.2.41"
+    "vue": "^3.2.41",
+    "vue-loader": "^17.2.2",
+    "webpack": "^5.88.2"
+  },
+  "dependencies": {
+    "vue-router": "^4.1.6"
   }
 }
