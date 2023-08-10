@@ -2,6 +2,7 @@ import { createServer } from 'vite';
 import { resolvePackagePath } from './util';
 import pluginVue from '@vitejs/plugin-vue';
 import pluginVueJsx from '@vitejs/plugin-vue-jsx';
+import { watchBuildSSRCode } from './build-work-front-ssr';
 
 (async () => {
   const server = await createServer({
@@ -18,4 +19,6 @@ import pluginVueJsx from '@vitejs/plugin-vue-jsx';
   });
   await server.listen();
   server.printUrls();
+
+  watchBuildSSRCode();
 })();

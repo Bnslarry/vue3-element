@@ -3,7 +3,8 @@ import path from 'node:path';
 import Koa from 'koa';
 import koaStatic from 'koa-static';
 import koaMount from 'koa-mount';
-import routers from './router';
+// import routers from './router';
+import routers from './ssrRouter';
 import { getServerDir } from './util/file';
 
 const app = new Koa();

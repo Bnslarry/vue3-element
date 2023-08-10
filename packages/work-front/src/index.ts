@@ -1,1 +1,1 @@
-window.location.href = '/page/manage';
+window.location.href = '/page/home';

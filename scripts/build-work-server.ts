@@ -145,6 +145,8 @@ async function build(pkgDirName: string) {
   await copyFrontFiles(pkgDirName);
 }
 
-console.log('[TS] 开始编译 Node.js 项目···');
-await build('work-server');
-console.log('[TS] 编译所有 Node.js 项目成功！');
+(async () => {
+  console.log('[TS] 开始编译 Node.js 项目···');
+  await build('work-server');
+  console.log('[TS] 编译所有 Node.js 项目成功！');
+})();
